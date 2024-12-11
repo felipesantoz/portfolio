@@ -5,16 +5,26 @@
 	let container: HTMLDivElement;
 
 	onMount(() => {
-		new TypeIt(container, {
-			strings: [
-				'Full Stack Development',
-				'Bespoke Web Design',
-				'Data Driven SEO',
-				'Hybrid Mobile Apps',
-				'Accessible & Responsive Layouts'
-			]
-		});
+		const strings = [
+			'Full Stack Development',
+			'Bespoke Web Design',
+			'Data Driven SEO',
+			'Hybrid Mobile Apps',
+			'Accessible & Responsive Layouts'
+		];
+		strings
+			.reduce(
+				(acc, curr) => acc.type(curr).pause(2000).delete(curr.length).pause(500),
+				new TypeIt(container, { loop: true })
+			)
+			.go();
 	});
 </script>
 
-<div bind:this={container} class="w-full flex-1 text-white"></div>
+<div bind:this={container} class="font-fira h-fit text-3xl text-white"></div>
+
+<style>
+	:root {
+		--ti-cursor-color: theme('colors.orange.500');
+	}
+</style>

@@ -10,6 +10,9 @@ export default {
 		extend: {
 			colors: {
 				main: '#151520'
+			},
+			fontFamily: {
+				fira: ['"Fira Mono"', 'monospace']
 			}
 		}
 	},
