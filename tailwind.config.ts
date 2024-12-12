@@ -1,6 +1,7 @@
 import containerQueries from '@tailwindcss/container-queries';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
+import extendedShadows from 'tailwind-extended-shadows';
 import type { Config } from 'tailwindcss';
 
 export default {
@@ -18,5 +19,5 @@ export default {
 		}
 	},
 
-	plugins: [typography, forms, containerQueries]
+	plugins: [typography, forms, containerQueries, extendedShadows]
 } satisfies Config;
