@@ -21,7 +21,7 @@
 	});
 </script>
 
-<div bind:this={container} class="font-fira h-fit text-3xl text-white"></div>
+<div bind:this={container} class="h-fit font-fira text-white lg:text-3xl"></div>
 
 <style>
 	:root {
