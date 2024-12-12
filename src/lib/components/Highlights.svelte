@@ -6,11 +6,11 @@
 
 	onMount(() => {
 		const strings = [
-			'Full Stack Development',
-			'Bespoke Web Design',
-			'Data Driven SEO',
-			'Hybrid Mobile Apps',
-			'Accessible & Responsive Layouts'
+			'full stack development',
+			'bespoke web design',
+			'data driven seo',
+			'hybrid mobile apps',
+			'accessible & responsive layouts'
 		];
 		strings
 			.reduce(

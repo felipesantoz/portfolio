@@ -12,7 +12,8 @@ export default {
 				main: '#151520'
 			},
 			fontFamily: {
-				fira: ['"Fira Mono"', 'monospace']
+				'fira-mono': ['"Fira Mono"', 'monospace'],
+				'fira-code': ['"Fira Code"', 'serif']
 			}
 		}
 	},
