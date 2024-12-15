@@ -3,18 +3,16 @@
 	import felipe from '$lib/assets/felipe.jpg';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import Paging from '$lib/components/Paging.svelte';
 
 	let mounted = $state(false);
 	onMount(() => (mounted = true));
-	let selectedPageName = $state('About');
 </script>
 
 <div
 	id="about"
-	class="m-auto flex h-screen max-w-5xl snap-start flex-col justify-between gap-12 px-6 py-8 md:py-16"
+	class="m-auto flex min-h-screen max-w-5xl snap-start flex-col justify-between gap-12 px-6 py-8 md:py-16"
 >
-	<BracketedHeader class="text-2xl md:text-5xl">about us</BracketedHeader>
+	<BracketedHeader class="text-2xl md:text-5xl">about</BracketedHeader>
 	<h2 class="text-lg md:pl-12 md:pr-72 md:text-3xl">
 		Delivering <span class="underline decoration-orange-400">sleek</span> interfaces,
 		<span class="underline decoration-orange-400">high-performance</span> code, and
