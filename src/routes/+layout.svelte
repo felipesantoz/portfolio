@@ -8,7 +8,7 @@
 </script>
 
 <div
-	class="h-screen w-screen snap-y snap-mandatory overflow-y-auto overflow-x-hidden scroll-smooth bg-main font-fira-mono text-white"
+	class="h-screen w-screen snap-y snap-proximity overflow-y-auto overflow-x-hidden scroll-smooth bg-main font-fira-mono text-white md:snap-mandatory"
 	bind:this={container}
 	onscroll={() => (scrollTop = container?.scrollTop ?? 0)}
 >

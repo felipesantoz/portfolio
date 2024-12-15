@@ -11,17 +11,21 @@
 	let { pageName, isSelected, href }: Props = $props();
 	let isHovering = $state(false);
 	const bubbleDiameter = new Spring(4);
+	const handleEnter = () => {
+		bubbleDiameter.target = 12;
+		isHovering = true;
+	};
+	const handleLeave = () => {
+		bubbleDiameter.target = 4;
+		isHovering = false;
+	};
 </script>
 
 <a
-	onmouseenter={() => {
-		bubbleDiameter.target = 12;
-		isHovering = true;
-	}}
-	onmouseleave={() => {
-		bubbleDiameter.target = 4;
-		isHovering = false;
-	}}
+	onmouseenter={handleEnter}
+	onmouseleave={handleLeave}
+	onfocus={handleEnter}
+	onblur={handleLeave}
 	{href}
 	class={`flex items-center gap-2`}
 >

@@ -18,7 +18,7 @@
 
 <div class="fixed inset-y-0 left-4 my-auto flex max-h-max flex-col justify-center">
 	<nav class="flex flex-col">
-		{#each pages as page}
+		{#each pages as page (page.name)}
 			<NavigationItem
 				href={page.href}
 				pageName={page.name}
