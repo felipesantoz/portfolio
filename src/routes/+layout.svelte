@@ -17,8 +17,8 @@
 		pages={[
 			{ name: 'home', href: '#home' },
 			{ name: 'about', href: '#about' },
-			{ name: 'selected-works', href: '' },
-			{ name: 'contact', href: '' }
+			{ name: 'selected-works', href: '#selected-works' },
+			{ name: 'contact', href: '#contact' }
 		]}
 		bind:selectedPageName
 	/>
