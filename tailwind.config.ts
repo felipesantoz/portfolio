@@ -10,7 +10,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				main: '#151520'
+				vulcan: {
+					50: '#f6f6f9',
+					800: '#363856',
+					900: '#30304a',
+					950: '#151520'
+				}
 			},
 			fontFamily: {
 				'fira-mono': ['"Fira Mono"', 'monospace'],
