@@ -4,9 +4,10 @@
 	import { fly } from 'svelte/transition';
 	import InView from '$lib/components/InView.svelte';
 	import Underlined from '$lib/components/Underlined.svelte';
+	import PageTemplate from '$lib/components/PageTemplate.svelte';
 </script>
 
-<div
+<PageTemplate
 	id="about"
 	class="m-auto flex min-h-screen max-w-5xl snap-start flex-col justify-between gap-12 px-6 py-8 md:py-16"
 >
@@ -42,4 +43,4 @@
 			your vision to life—so don't hesitate to get in touch!
 		</p>
 	</div>
-</div>
+</PageTemplate>

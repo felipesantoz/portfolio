@@ -1,16 +1,18 @@
 <script lang="ts">
+	import { pageIds } from '$lib/consts';
+	import { pageOffsets } from '$lib/state.svelte';
 	import NavigationItem from './NavigationItem.svelte';
 
 	type Props = {
 		scrollTop: number;
-		selectedPageName: string;
-		pages: { name: string; href: string }[];
 	};
-	let { scrollTop, selectedPageName = $bindable(), pages }: Props = $props();
+	let { scrollTop }: Props = $props();
 	let innerHeight = $state(0);
+	let selectedPageId = $state();
 	$effect(() => {
-		const index = Math.floor((scrollTop + innerHeight / 2) / innerHeight);
-		selectedPageName = pages[index].name;
+		console.log(scrollTop);
+		console.log(pageOffsets);
+		selectedPageId = pageIds.toReversed().find((id) => pageOffsets[id] <= scrollTop + 200);
 	});
 </script>
 
@@ -18,12 +20,8 @@
 
 <div class="fixed inset-y-0 left-4 my-auto flex max-h-max flex-col justify-center">
 	<nav class="flex flex-col">
-		{#each pages as page (page.name)}
-			<NavigationItem
-				href={page.href}
-				pageName={page.name}
-				isSelected={page.name == selectedPageName}
-			/>
+		{#each pageIds as pageId}
+			<NavigationItem href={`#${pageId}`} pageName={pageId} isSelected={pageId == selectedPageId} />
 		{/each}
 	</nav>
 </div>
