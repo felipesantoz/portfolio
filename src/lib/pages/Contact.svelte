@@ -11,8 +11,8 @@
 	id="contact"
 	class="m-auto flex min-h-screen max-w-5xl snap-start flex-col items-center justify-around gap-12 px-6 py-8 md:py-16"
 >
-	<BracketedHeader class="text-2xl md:text-5xl">contact</BracketedHeader>
-	<div class="flex flex-col items-center gap-6">
+	<BracketedHeader class="w-full text-2xl md:text-5xl">contact</BracketedHeader>
+	<div class="flex flex-col gap-6">
 		<h2 class="text-lg md:text-3xl">hire us</h2>
 		<p>Interested in hiring us? Let us know using the form below!</p>
 
