@@ -58,7 +58,7 @@
 	</div>
 	<button
 		type="submit"
-		class="shadow-vulcan-800/50 w-fit rounded bg-orange-900 px-3 py-1 shadow-lg hover:bg-orange-800"
+		class="shadow-vulcan-800/50 w-fit rounded bg-orange-900 px-3 py-1 shadow-lg transition duration-300 ease-in-out hover:bg-orange-800"
 	>
 		send
 	</button>
