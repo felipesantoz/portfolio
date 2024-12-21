@@ -16,15 +16,6 @@
 	bind:this={container}
 	onscroll={() => (scrollTop = container?.scrollTop ?? 0)}
 >
-	<Navigation
-		{scrollTop}
-		pages={[
-			{ name: 'home', href: '#home' },
-			{ name: 'about', href: '#about' },
-			{ name: 'selected-works', href: '#selected-works' },
-			{ name: 'contact', href: '#contact' }
-		]}
-		bind:selectedPageName
-	/>
+	<Navigation {scrollTop} />
 	{@render children()}
 </div>

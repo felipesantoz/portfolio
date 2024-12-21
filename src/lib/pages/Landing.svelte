@@ -2,11 +2,17 @@
 	import ChevronDown from '$lib/assets/ChevronDown.svelte';
 	import BracketedHeader from '$lib/components/BracketedHeader.svelte';
 	import Highlights from '$lib/components/Highlights.svelte';
+	import PageTemplate from '$lib/components/PageTemplate.svelte';
 	import Scene from '$lib/components/Scene.svelte';
+	import { pageOffsets } from '$lib/state.svelte';
 	let zoomScene = $state(false);
+	let container: HTMLDivElement | undefined = $state();
+	$effect(() => {
+		pageOffsets.home = container?.offsetTop ?? 0;
+	});
 </script>
 
-<div
+<PageTemplate
 	id="home"
 	class="flex h-screen w-screen snap-start flex-col items-center gap-6 overflow-hidden"
 >
@@ -22,4 +28,4 @@
 		<span>enter</span>
 		<ChevronDown class="size-4 text-orange-500" />
 	</a>
-</div>
+</PageTemplate>

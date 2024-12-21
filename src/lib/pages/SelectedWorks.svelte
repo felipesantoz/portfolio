@@ -1,8 +1,9 @@
 <script lang="ts">
 	import BracketedHeader from '$lib/components/BracketedHeader.svelte';
+	import PageTemplate from '$lib/components/PageTemplate.svelte';
 </script>
 
-<div
+<PageTemplate
 	id="selected-works"
 	class="m-auto flex min-h-screen max-w-5xl snap-start flex-col gap-12 px-6 py-8 md:py-16"
 >
@@ -15,4 +16,4 @@
 			<h2>Admin Dashboard</h2>
 		</div>
 	</div>
-</div>
+</PageTemplate>

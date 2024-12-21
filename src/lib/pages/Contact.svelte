@@ -4,9 +4,10 @@
 	import Linkedin from '$lib/assets/contact/Linkedin.svelte';
 	import BracketedHeader from '$lib/components/BracketedHeader.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
+	import PageTemplate from '$lib/components/PageTemplate.svelte';
 </script>
 
-<div
+<PageTemplate
 	id="contact"
 	class="m-auto flex min-h-screen max-w-5xl snap-start flex-col items-center justify-around gap-12 px-6 py-8 md:py-16"
 >
@@ -23,4 +24,4 @@
 		<Github class="text-vulcan-50 drop-shadow-[0_10px_8px_theme('colors.vulcan.800')]" />
 		<Email class="text-vulcan-50 drop-shadow-[0_10px_8px_theme('colors.vulcan.800')]" />
 	</div>
-</div>
+</PageTemplate>
