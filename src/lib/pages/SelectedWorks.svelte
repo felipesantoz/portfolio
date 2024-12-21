@@ -16,7 +16,9 @@
 >
 	<BracketedHeader class="w-full text-2xl md:text-5xl">selected-works</BracketedHeader>
 
-	<div class="flex h-full w-full max-w-2xl flex-col gap-10">
+	<div
+		class="flex h-full w-full max-w-2xl flex-col gap-10 rounded-lg border border-vulcan-800 px-10 py-8"
+	>
 		<div class="flex flex-col gap-4">
 			<InView><h2 class="text-lg md:text-3xl"><Underlined>pawprint</Underlined></h2></InView>
 			<div class="flex gap-2">
