@@ -6,8 +6,8 @@
 	let zoomScene = $state(false);
 </script>
 
-<div class="font-fira flex h-screen w-screen flex-col items-center gap-6 overflow-hidden bg-main">
-	<h1 class="font-fira pt-16 text-2xl text-white lg:text-6xl">
+<div class="flex h-screen w-screen flex-col items-center gap-6 overflow-hidden bg-main font-fira">
+	<h1 class="pt-16 font-fira text-xl text-white lg:text-6xl">
 		<span class="text-orange-500">&lt;</span>santos web solutions
 		<span class="text-orange-500">/&gt;</span>
 	</h1>
@@ -15,7 +15,7 @@
 	<Highlights />
 	<a
 		href="/"
-		class="flex transform flex-col items-center gap-0 pt-6 text-white transition duration-200 hover:scale-110"
+		class="flex transform flex-col items-center gap-0 pt-6 text-xs text-white transition duration-200 hover:scale-110 lg:text-base"
 		onmouseenter={() => (zoomScene = true)}
 		onmouseleave={() => (zoomScene = false)}
 	>
