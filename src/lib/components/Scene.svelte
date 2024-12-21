@@ -2,9 +2,9 @@
 	import { onMount } from 'svelte';
 	import { Spring } from 'svelte/motion';
 	import * as THREE from 'three';
-	export let zoomScene: boolean;
+	let { zoomScene }: { zoomScene: boolean } = $props();
 	let container: HTMLDivElement;
-	let cameraPositionZ = new Spring(90);
+	const cameraPositionZ = new Spring(90);
 
 	onMount(() => {
 		const scene = new THREE.Scene();
@@ -41,7 +41,7 @@
 			// (-1 to +1) for both components
 
 			pointer.x = (event.clientX / container.clientWidth) * 2 - 1;
-			pointer.y = -(event.clientY / container.clientHeight) * 2 + 1;
+			pointer.y = -((event.clientY - container.offsetTop) / container.clientHeight) * 2 + 1;
 		}
 
 		window.addEventListener('pointermove', onPointerMove);

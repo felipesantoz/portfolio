@@ -15,6 +15,12 @@ export default {
 			fontFamily: {
 				'fira-mono': ['"Fira Mono"', 'monospace'],
 				'fira-code': ['"Fira Code"', 'serif']
+			},
+			scale: {
+				'300': '3'
+			},
+			fontSize: {
+				'2xs': '0.6rem'
 			}
 		}
 	},
