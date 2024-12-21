@@ -11,7 +11,6 @@
 	let currentSlide = $state(0);
 	let { slideSrcs, alt }: Props = $props();
 	let direction = $state(1);
-	$inspect(currentSlide);
 </script>
 
 <div class=" flex w-full items-center justify-between gap-4">
