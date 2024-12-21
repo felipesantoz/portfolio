@@ -40,8 +40,8 @@
 			// calculate pointer position in normalized device coordinates
 			// (-1 to +1) for both components
 
-			pointer.x = (event.clientX / container.clientWidth) * 2 - 1;
-			pointer.y = -((event.clientY - container.offsetTop) / container.clientHeight) * 2 + 1;
+			pointer.x = (event.clientX / container?.clientWidth) * 2 - 1;
+			pointer.y = -((event.clientY - container?.offsetTop) / container?.clientHeight) * 2 + 1;
 		}
 
 		window.addEventListener('pointermove', onPointerMove);
