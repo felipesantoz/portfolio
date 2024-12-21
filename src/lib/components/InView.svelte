@@ -3,7 +3,7 @@
 
 	let container: HTMLDivElement;
 	let visible = $state(false);
-	let { class: className, children } = $props();
+	let { class: className = '', children } = $props();
 
 	onMount(() => {
 		const event = new EventTarget();

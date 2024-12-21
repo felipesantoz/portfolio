@@ -3,6 +3,7 @@
 	import felipe from '$lib/assets/felipe.jpg';
 	import { fly } from 'svelte/transition';
 	import InView from '$lib/components/InView.svelte';
+	import Underlined from '$lib/components/Underlined.svelte';
 </script>
 
 <div
@@ -10,12 +11,14 @@
 	class="m-auto flex min-h-screen max-w-5xl snap-start flex-col justify-between gap-12 px-6 py-8 md:py-16"
 >
 	<BracketedHeader class="text-2xl md:text-5xl">about</BracketedHeader>
-	<h2 class="text-lg md:pl-12 md:pr-72 md:text-3xl">
-		Delivering <span class="underline decoration-orange-400">sleek</span> interfaces,
-		<span class="underline decoration-orange-400">high-performance</span> code, and
-		<span class="underline decoration-orange-400">tailored</span> support, all at an
-		<span class="underline decoration-orange-400">agile</span> pace
-	</h2>
+	<InView>
+		<h2 class="text-lg md:pl-12 md:pr-72 md:text-3xl">
+			Delivering <Underlined>sleek</Underlined> interfaces,
+			<Underlined>high-performance</Underlined> code, and
+			<Underlined>tailored</Underlined> support, all at an
+			<Underlined>agile</Underlined> pace
+		</h2>
+	</InView>
 	<div class="flex w-full flex-wrap items-center gap-12 md:flex-nowrap">
 		<InView class="h-[412px] w-full md:w-1/3">
 			<img
