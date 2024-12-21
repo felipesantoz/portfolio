@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex h-screen w-screen flex-col items-center gap-6 overflow-hidden bg-main font-fira">
-	<h1 class="pt-16 font-fira text-xl text-white lg:text-6xl">
+	<h1 class="pt-8 font-fira text-xl text-white lg:pt-16 lg:text-6xl">
 		<span class="text-orange-500">&lt;</span>santos web solutions
 		<span class="text-orange-500">/&gt;</span>
 	</h1>
