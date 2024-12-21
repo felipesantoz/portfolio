@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Navigation from '$lib/components/Navigation.svelte';
+	import Navigation from '$lib/components/Navigation/Navigation.svelte';
 	import { onMount } from 'svelte';
 	import '../app.css';
 	let { children } = $props();
@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="bg-vulcan-950 h-screen w-screen snap-y snap-proximity overflow-y-auto overflow-x-hidden scroll-smooth font-fira-mono text-white md:snap-mandatory"
+	class="h-screen w-screen snap-y snap-proximity overflow-y-auto overflow-x-hidden scroll-smooth bg-vulcan-950 font-fira-mono text-white md:snap-mandatory"
 	bind:this={container}
 	onscroll={() => (scrollTop = container?.scrollTop ?? 0)}
 >

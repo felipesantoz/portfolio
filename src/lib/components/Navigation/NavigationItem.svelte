@@ -2,13 +2,15 @@
 	import ChevronRight from '$lib/assets/ChevronRight.svelte';
 	import { Spring } from 'svelte/motion';
 	import { fade } from 'svelte/transition';
+	import { isOpen } from './state.svelte';
 
 	type Props = {
 		pageName: string;
 		isSelected: boolean;
 		href: string;
+		forceDisplay?: boolean;
 	};
-	let { pageName, isSelected, href }: Props = $props();
+	let { pageName, isSelected, href, forceDisplay = false }: Props = $props();
 	let isHovering = $state(false);
 	const bubbleDiameter = new Spring(4);
 	const handleEnter = () => {
@@ -27,6 +29,7 @@
 	onfocus={handleEnter}
 	onblur={handleLeave}
 	{href}
+	onclick={() => (isOpen.current = false)}
 	class={`flex items-center gap-2`}
 >
 	<div class="flex w-4 justify-center py-3">
@@ -39,8 +42,8 @@
 			></div>
 		{/if}
 	</div>
-	{#if isSelected || isHovering}
-		<div transition:fade={{ duration: 200 }} class="text-2xs">
+	{#if isSelected || isHovering || forceDisplay}
+		<div transition:fade={{ duration: 200 }} class="whitespace-nowrap text-2xs">
 			{pageName}
 		</div>
 	{/if}
