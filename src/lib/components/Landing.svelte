@@ -14,7 +14,7 @@
 	<Scene {zoomScene} />
 	<Highlights />
 	<a
-		href="/about"
+		href="/"
 		class="flex transform flex-col items-center gap-0 pt-6 text-white transition duration-200 hover:scale-110"
 		onmouseenter={() => (zoomScene = true)}
 		onmouseleave={() => (zoomScene = false)}
