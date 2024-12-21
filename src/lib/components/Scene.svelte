@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { Spring } from 'svelte/motion';
 	import * as THREE from 'three';
+	export let zoomScene: boolean;
 	let container: HTMLDivElement;
 	let cameraPositionZ = new Spring(90);
 
@@ -50,10 +51,10 @@
 			raycaster.setFromCamera(pointer, camera);
 			// calculate objects intersecting the picking ray
 			const intersects = raycaster.intersectObject(torusKnot);
-			if (intersects.length) {
-				cameraPositionZ.target = 56;
+			if (intersects.length || zoomScene) {
+				cameraPositionZ.target = 54;
 			} else {
-				cameraPositionZ.target = 64;
+				cameraPositionZ.target = 60;
 			}
 			points.rotation.x += 0.001;
 			points.rotation.y += 0.001;
@@ -64,4 +65,4 @@
 	});
 </script>
 
-<div bind:this={container} class="h-2/3 w-full"></div>
+<div bind:this={container} class="h-3/5 w-full"></div>
