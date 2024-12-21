@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex h-screen w-screen flex-col items-center gap-6 overflow-hidden">
-	<BracketedHeader class="pt-8 text-xl lg:pt-16 lg:text-6xl">santos web solutions</BracketedHeader>
+	<BracketedHeader class="pt-8 text-xl lg:pt-16 lg:text-6xl">santos-web-solutions</BracketedHeader>
 	<Scene {zoomScene} />
 	<Highlights />
 	<a
