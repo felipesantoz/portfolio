@@ -2,10 +2,7 @@
 	import BracketedHeader from '$lib/components/BracketedHeader.svelte';
 	import felipe from '$lib/assets/felipe.jpg';
 	import { fly } from 'svelte/transition';
-	import { onMount } from 'svelte';
-
-	let mounted = $state(false);
-	onMount(() => (mounted = true));
+	import InView from '$lib/components/InView.svelte';
 </script>
 
 <div
@@ -20,16 +17,14 @@
 		<span class="underline decoration-orange-400">agile</span> pace
 	</h2>
 	<div class="flex w-full flex-wrap items-center gap-12 md:flex-nowrap">
-		<div class="h-[412px] w-full md:w-1/3">
-			{#if mounted}
-				<img
-					in:fly={{ x: -200, duration: 1000 }}
-					class="rounded shadow shadow-orange-900 shadow-blur-6 shadow-spread-1.5 shadow-opacity-40"
-					alt="Portrait of Felipe smiling"
-					src={felipe}
-				/>
-			{/if}
-		</div>
+		<InView class="h-[412px] w-full md:w-1/3">
+			<img
+				in:fly={{ x: -200, duration: 1000 }}
+				class="rounded shadow shadow-orange-900 shadow-blur-6 shadow-spread-1.5 shadow-opacity-40"
+				alt="Portrait of Felipe smiling"
+				src={felipe}
+			/>
+		</InView>
 		<p class="w-full font-fira-code md:w-2/3">
 			<em class="font-bold text-orange-400">santos-web-solutions</em> is the web development
 			contracting enterprise founded by <em>Felipe Santos</em>, a passionate web developer who
