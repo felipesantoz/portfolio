@@ -10,8 +10,6 @@
 	let innerHeight = $state(0);
 	let selectedPageId = $state();
 	$effect(() => {
-		console.log(scrollTop);
-		console.log(pageOffsets);
 		selectedPageId = pageIds.toReversed().find((id) => pageOffsets[id] <= scrollTop + 200);
 	});
 </script>

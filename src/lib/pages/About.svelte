@@ -24,12 +24,12 @@
 		<InView class="h-[412px] w-full md:w-1/3">
 			<img
 				in:fly={{ x: -200, duration: 1000 }}
-				class="rounded shadow shadow-orange-900 shadow-blur-6 shadow-spread-1.5 shadow-opacity-40"
+				class="max-h-full rounded shadow shadow-orange-900 shadow-blur-6 shadow-spread-1.5 shadow-opacity-40"
 				alt="Portrait of Felipe smiling"
 				src={felipe}
 			/>
 		</InView>
-		<p class="w-full font-fira-code md:w-2/3">
+		<p class="w-full text-justify font-fira-code md:w-2/3">
 			<em class="font-bold text-orange-400">santos-web-solutions</em> is the web development
 			contracting enterprise founded by <em>Felipe Santos</em>, a passionate web developer who
 			thrives on creating high-quality websites for his clients. With a strong technical background
