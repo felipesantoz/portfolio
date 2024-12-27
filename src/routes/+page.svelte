@@ -7,7 +7,7 @@
 
 	let { data }: { data: PageData } = $props();
 </script>
-
+<title>Web Design Nottingham | santos-web-solutions</title>
 <Landing />
 <About />
 <SelectedWorks {data} />
