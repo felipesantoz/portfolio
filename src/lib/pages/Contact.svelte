@@ -14,7 +14,7 @@
 	<BracketedHeader class="w-full text-2xl md:text-5xl">contact</BracketedHeader>
 	<div class="flex flex-col gap-6">
 		<h2 class="text-lg md:text-3xl">hire us</h2>
-		<p>Interested in hiring us? Let us know using the form below!</p>
+		<p>Interested in hiring us to do your web design? Let us know using the form below!</p>
 
 		<ContactForm />
 	</div>

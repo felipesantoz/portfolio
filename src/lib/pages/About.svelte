@@ -31,16 +31,17 @@
 		</InView>
 		<p class="w-full text-justify font-fira-code md:w-2/3">
 			<em class="font-bold text-orange-400">santos-web-solutions</em> is the web development
-			contracting enterprise founded by <em>Felipe Santos</em>, a passionate web developer who
-			thrives on creating high-quality websites for his clients. With a strong technical background
-			and a keen eye for detail, we believe in delivering exceptional results—all while keeping our
-			rates affordable. Indeed, by being based where the cost of living is lower, we are able to
-			offer clients great value without compromising on quality. Felipe is also Cambridge-educated
-			and is currently pursuing a part-time PhD in theoretical computer science, providing technical
-			soundness scarcely found elsewhere. Therefore, by working with <em>sws</em>, clients can
-			expect world-class quality at a competitive price. We invite visitors to explore the website
-			and see the results for themselves. If our work resonates with you, we are eager to help bring
-			your vision to life—so don't hesitate to get in touch!
+			contracting enterprise founded by <em>Felipe Santos</em>, a passionate Nottingham-based web
+			designer who thrives on creating high-quality websites for his clients. With a strong
+			technical background and a keen eye for detail, we believe in delivering exceptional
+			results—all while keeping our rates affordable. Indeed, by being based where the cost of
+			living is lower, we are able to offer clients great value without compromising on quality.
+			Felipe is also Cambridge-educated and is currently pursuing a part-time PhD in theoretical
+			computer science, providing technical soundness scarcely found elsewhere. Therefore, by
+			working with <em>sws</em>, clients can expect world-class quality at a competitive price. We
+			invite visitors to explore the website and see the results for themselves. If our work
+			resonates with you, we are eager to help bring your vision to life—so don't hesitate to get in
+			touch!
 		</p>
 	</div>
 </PageTemplate>
